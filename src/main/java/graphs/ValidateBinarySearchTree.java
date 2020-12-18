@@ -1,4 +1,4 @@
-import com.sun.source.tree.Tree;
+package graphs;
 
 public class ValidateBinarySearchTree {
 
