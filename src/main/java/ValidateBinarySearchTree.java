@@ -1,9 +1,13 @@
+import com.sun.source.tree.Tree;
+
 public class ValidateBinarySearchTree {
 
     public static void main(String[] args) {
 
+        TreeNode t = new TreeNode(5, new TreeNode(1), new TreeNode(4));
 
-        boolean answer = isValid(new TreeNode(3));
+
+        boolean answer = isValid(t);
         System.out.println(answer);
 
     }
