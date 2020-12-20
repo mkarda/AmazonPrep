@@ -3,6 +3,12 @@ package graphs;
 import java.util.ArrayList;
 import java.util.List;
 
+//preorder -> root, left, right
+//inorder -> left, root, right
+//postorder -> left, right, root
+
+
+
 public class BinaryTreeLevelOrderTraversal {
     //wypisac rzedy jako arrays
     static List<List<Integer>> levels = new ArrayList<>();
