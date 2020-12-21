@@ -9,6 +9,9 @@ import java.util.List;
 //inorder -> left, root, right
 //postorder -> left, right, root
 
+//Heap - zmienne instancji klasy i obiekty. Heap jest częścią pamięci gdzie żyją obiekty Javy i to na tej części pamięci pracuje Garbage Collector (utrzyjmuąc ją jak najmniejszą).
+//Stack - zmienne lokalne
+
 
 
 public class BinaryTreeLevelOrderTraversal {
