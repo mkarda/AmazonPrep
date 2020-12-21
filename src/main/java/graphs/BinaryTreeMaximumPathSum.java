@@ -32,9 +32,4 @@ public class BinaryTreeMaximumPathSum {
         // return the max gain if continue the same path
         return node.val + Math.max(left_gain, right_gain);
     }
-
-    public int maxPathSum(TreeNode root) {
-        max_gain(root);
-        return max_sum;
-    }
 }

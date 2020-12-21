@@ -1,5 +1,7 @@
 package graphs;
 
+import design.Codec;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +17,8 @@ public class BinaryTreeLevelOrderTraversal {
 
 
     public static void main(String[] args) {
+
+        Codec c = new Codec();
 
         TreeNode t = new TreeNode(2, new TreeNode(4, new TreeNode(6), new TreeNode(9)), new TreeNode(2));
 

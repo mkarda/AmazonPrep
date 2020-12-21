@@ -13,6 +13,9 @@ public class MaxDepthTopBottom {
 
         getMaxDepth(t, 1);
         System.out.println(ans);
+
+        int maxDepthReturning = getMaxDepthReturning(t, 0);
+        System.out.println(maxDepthReturning);
     }
 
     static int ans;
@@ -26,5 +29,20 @@ public class MaxDepthTopBottom {
 
         getMaxDepth(root.left, depth + 1);
         getMaxDepth(root.right, depth + 1);
+    }
+
+
+    static int getMaxDepthReturning(TreeNode root, int depth) {
+        if (root == null) return 0;
+
+        if (root.left == null && root.right == null) {
+//            depth = Math.max(ans, depth);
+            return depth + 1;
+        }
+
+        int a = getMaxDepthReturning(root.left, depth + 1);
+        int b = getMaxDepthReturning(root.right, depth + 1);
+        return Math.max(a,b);
+//        return depth;
     }
 }

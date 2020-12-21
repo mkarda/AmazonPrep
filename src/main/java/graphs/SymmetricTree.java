@@ -4,7 +4,9 @@ public class SymmetricTree {
 
     public static void main(String[] args) {
 
-        TreeNode t = new TreeNode(1, new TreeNode(2), new TreeNode(4));
+        TreeNode t = new TreeNode(1,
+                new TreeNode(2),
+                new TreeNode(4));
 
         boolean answer = isSymmetric(t);
         System.out.println(answer);

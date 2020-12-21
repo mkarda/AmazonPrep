@@ -8,7 +8,11 @@ public class BinaryTreeZigzagLevelOrderTraversal {
 
     public static void main(String[] args) {
 
-        TreeNode t = new TreeNode(2, new TreeNode(4, new TreeNode(6), new TreeNode(9)), new TreeNode(2));
+        TreeNode t = new TreeNode(2,
+                new TreeNode(4,
+                        new TreeNode(6),
+                        new TreeNode(9)),
+                new TreeNode(2));
         List<List<Integer>> answer = zigzagLevelOrder(t);
         System.out.println(answer);
 
@@ -24,6 +28,7 @@ public class BinaryTreeZigzagLevelOrderTraversal {
         // add the root element with a delimiter to kick off the BFS loop
         LinkedList<TreeNode> node_queue = new LinkedList<TreeNode>();
         node_queue.addLast(root);
+        //dodajemy null jako znacznik konca nodów dla danej liniii, jak sie natkniemy to resetujemy liste i zmieniamy jak strone dodawania nodów
         node_queue.addLast(null);
 
         LinkedList<Integer> level_list = new LinkedList<Integer>();
